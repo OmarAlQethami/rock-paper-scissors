@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    gap: 50px;
+}
+
+button {
+    font-family: Verdana, "Geneva", Tahoma, sans-serif;
+    height: 100px;
+    width: 100px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(247, 208, 100);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    transition: 0.3s;
+}
+
+button:hover {
+    height: 120px;
+    width: 120px;
+    background-color: rgb(247, 200, 73);
+}
+
+button:active {
+    background-color: #4db850;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
