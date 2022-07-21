@@ -28,7 +28,7 @@ function playRound(playerSelection, computerSelection) {
 }
 
 rock.addEventListener('click', () => {
-    result.textContent= playRound('rock', getComputerChoice());
+    result.textContent = playRound('rock', getComputerChoice());
 });
 
 paper.addEventListener('click', () => {
@@ -39,26 +39,8 @@ scissors.addEventListener('click', () => {
     result.textContent = playRound('scissors', getComputerChoice());
 });
 
-
-
 function getComputerChoice() {
     let choice = ["rock", "paper", "scissors"];
     let random = choice[Math.floor(Math.random() * choice.length)];
     return random;
 }
-
-
-
-
-/*function game() {
-    for(let i = 0; i < 5; i++) {
-        const playerSelection = getPlayerChoice();
-        const computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-    }
-}
-
-
-const div = document.createElement('div');
-div.classList.add('result');
-document.body.appendChild(result);*/
